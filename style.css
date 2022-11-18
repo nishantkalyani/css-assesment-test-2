@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    
+}
+
+h1{
+    color: white;
+}
+
+.center {
+    display: flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    animation: circle 2s linear  infinite;
+    border-radius:50%;
+    margin: 5px;
+
+}
+.circle:nth-child(1){
+    animation-delay:0.1s ;
+}
+
+.circle:nth-child(2){
+    animation-delay:0.3s ;
+}
+
+.circle:nth-child(3){
+    animation-delay: 0.5s;
+}
+
+@keyframes circle{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform:scale(1);
+    }
+    100%{
+        transform:scale(0);
+    }
+}
+
